@@ -1,0 +1,58 @@
+address {
+  a, p, span {
+    display: block;
+  }
+
+  a, p {
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  a {
+    font-size: 17px;
+    margin-bottom: 10px;
+    transition: color .25s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.contact-form {
+  & input,
+  & select {
+    color: $black;
+    background-color: #f1f1f1;
+    border-color: transparent;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .25s;
+    margin-bottom: 20px;
+
+    &:focus {
+      background-color: #fff;
+      border-color: #f5dd46;
+      box-shadow: none;
+    }
+  }
+
+  button {
+    display: block;
+    color: #000;
+    margin: 40px auto 10px;
+  }
+
+  p {
+    font-size: 12px;
+
+    a {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
+}

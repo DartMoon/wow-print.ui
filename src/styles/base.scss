@@ -1,0 +1,89 @@
+@import "resset";
+@import '../styles/themeColors.scss';
+
+html, body {
+  font-family: Calibri, sans-serif !important;
+  font-size: $font_size_16;
+}
+
+main {
+  & > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 0;
+
+    &.gallery {
+      min-height: 100%;
+      padding: 0;
+    }
+  }
+}
+
+h2 {
+  .wow-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 100px;
+
+    &_primary {
+
+    }
+  }
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.wow-bg {
+  background-color: $bgColor;
+  color: $textColor;
+
+  h2 {
+    color: $textColor;
+  }
+}
+
+.wow-bg-invert {
+  background-color: $bgColorInvert;
+  color: $textColorInvert;
+
+  h2 {
+    color: $textColorPrimary;
+  }
+}
+
+
+@import "button";
+@import "components/header";
+@import "components/hamburger";
+@import "components/banner";
+@import "components/for-what";
+@import "components/faq";
+@import "components/contacts";
+@import "components/footer";
+@import "components/carousel";
+
+@media (max-width: 993px) {
+
+}
+
+
+
+@media (max-width: 576px) {
+  main {
+    & > article {
+      min-height: initial;
+      padding: 80px 0;
+    }
+  }
+
+  .main-title {
+    //font-size: 18px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,22 @@
+.accordion {
+  width: 100%;
+}
+
+.card {
+  background-color: transparent;
+}
+
+.card-header button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #f5dd46;
+  text-align: left;
+
+  &:focus,
+  &:hover {
+    color: $primaryDark;
+    text-decoration: none;
+  }
+}

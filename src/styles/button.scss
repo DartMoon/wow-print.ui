@@ -1,0 +1,14 @@
+.btn-primary {
+  color: $black;
+  background: #ffec4b;
+  background: linear-gradient(90deg,#ffec4b 0,#ffc600);
+  border: none;
+  border-radius: .5rem;
+  transition: all .25s;
+
+  &:hover,
+  &:focus {
+    color: $black;
+    text-decoration: none;
+  }
+}

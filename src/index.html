@@ -1,23 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Wow print</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Wow print</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+
+      <ul class="d-flex flex-column flex-lg-row nav-list mr-auto">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Главная</a>
+        </li>
+        <li class="nav-list__item d-none d-lg-block">
+          <div class="dropdown">
+            <a class="nav-list__link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Продукция
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Магниты</a>
+              <a class="dropdown-item" href="#">Наклейки</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Что то еще</a>
+            </div>
+          </div>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="#">Магниты</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="#">Наклейки</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="#">Что то еще</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="d-flex ml-auto language-list">
+        <li class="language-list__item">
+          <a class="language-list__link active" href="#">ua</a>
+        </li>
+        <li class="language-list__item">
+          <a class="language-list__link" href="#">rus</a>
+        </li>
+        <li class="language-list__item">
+          <a class="language-list__link" href="#">eng</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<main>
+  <article class="gallery">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade h-100" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner h-100">
+        <div class="carousel-item h-100 active">
+          <img src="https://i.pinimg.com/originals/94/d8/fc/94d8fcd12fa17160b3adea1805693339.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <a class="btn btn-link btn-primary" href="/product.html">Подробнее</a>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="https://i.pinimg.com/originals/94/d8/fc/94d8fcd12fa17160b3adea1805693339.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a class="btn btn-link btn-primary" href="/product.html">Подробнее</a>
+          </div>
+        </div>
+        <div class="carousel-item h-100">
+          <img src="https://i.pinimg.com/originals/94/d8/fc/94d8fcd12fa17160b3adea1805693339.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <a class="btn btn-link btn-primary" href="/product.html">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </article>
+  <article class="wow-bg">
+    <div class="container-fluid">
+      <div class="carousel-wrp">
+        <div class="slider-arrow">
+          <button class="next"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button class="prev"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        <div id="carousel" class="product-carousel">
+          <div>
+            <img src="./images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="./images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="./images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="./images/carousel/carousel2.png" alt="">
+          </div>
+        </div>
+        <div class="text-center carousel-box position-absolute w-100">
+          <a class="btn btn-link btn-primary" href="/product.html">Подробнее</a>
+          <p class="mt-3">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </div>
       </div>
     </div>
-  </body>
+  </article>
+  <article class="wow-bg-invert for-what">
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="main-title">Для чего нужна сувенирная продукция?</h2>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
+            <img class="for-what__img" src="./images/icon/icon1.svg" alt="">
+            <h3 class="for-what__title">Сарафанное радио</h3>
+            <p class="for-what__text">
+              Сарафанное реадио всегда было и будет самим эффективным и бюджетным видом рекламы.
+              Чтобы люди говорили о
+              вашей компании много её нужно активно проявлять в часто просматриваемых местах
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
+            <img class="for-what__img" src="./images/icon/icon2.svg" alt="">
+            <h3 class="for-what__title">Имидж компании</h3>
+            <p class="for-what__text">Считается, что компания, которая может позволить себе выделять средства на
+              сувенирную продукцию, весьма
+              успешна и стабильна, будет надежным партнером в долгосрочном периоде.</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
+            <img class="for-what__img" src="./images/icon/icon3.svg" alt="">
+            <h3 class="for-what__title">Wow-эффект</h3>
+            <p class="for-what__text">Сарафанное радио всегда было и будет самим эффективным бюджетным видом рекламы.
+              Чтобы люди говорили о
+              вашей компании много её нужно акивно проявлять в часто просматриваемых местах</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
+            <img class="for-what__img" src="./images/icon/icon4.svg" alt="">
+            <h3 class="for-what__title">Альтернатива
+              <br>Digital-рекламе</h3>
+            <p class="for-what__text">Информация, содержащаяся на сувенирной продукции оригинальна. Она легко
+              запоминается и имеет длительный
+              срок воздействия, поскольку определенной вещью человек пользуется довольно долго.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="wow-bg">
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="main-title">Как мы работаем?</h2>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 for-what-container">
+            <img class="for-what__img for-what__img_shadow" src="./images/icon/icon5.svg" alt="">
+            <h3 class="for-what__title">Получаем вашу <br>заявку</h3>
+            <p class="for-what__text text-center">
+              Когда мы получаем заявку мы связываемся с вами и определеям канал коммуникации: почта, мессенджеры
+              Telegram\Viber
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4 for-what-container">
+            <img class="for-what__img for-what__img_shadow" src="./images/icon/icon6.svg" alt="">
+            <h3 class="for-what__title">Подтверждаете
+              <br>бланк заказа
+            </h3>
+            <p class="for-what__text text-center">В течение дня после того, как мы получили ваш макет или логотип,
+              желаемый размер, форму и тираж, мы высылаем бланк подверждения заказа.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-4 for-what-container">
+            <img class="for-what__img for-what__img_shadow" src="./images/icon/icon7.svg" alt="">
+            <h3 class="for-what__title">Получаете заказ
+              <br>в своём городе</h3>
+            <p class="for-what__text text-center">Мы работаем по всей Украине. После подверждения заказа в течение
+              указанного срока изготовления вы получаете свой заказ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="wow-bg-invert">
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="main-title">Популярные вопросы</h2>
+
+        <div class="row">
+
+          <div class="accordion" id="faq">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                    Collapsible Group Item #1
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                          aria-expanded="false" aria-controls="collapseTwo">
+                    Collapsible Group Item #2
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                          data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Collapsible Group Item #3
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                  moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                  Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                  proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                  aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+  <article class="wow-bg">
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="main-title">Контакты</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <address>
+              <span>Контактный номер:</span>
+              <a href="tel:+380670099797">+38 067 009 97 97</a>
+              <span>Электронная почта:</span>
+              <a href="mailto:stickerphone01@gmail.com">stickerphone01@gmail.com</a>
+              <span>Центральный офис:</span>
+              <p>Украина, г. Днепр, ул. Героев Крут, 16</p>
+              <span>Время работы:</span>
+              <p>ПН-ПТ 10:00 - 18:00</p>
+              <span>Напишите нам</span>
+            </address>
+            <div class="social">
+              <a href="viber://chat?number=+380670099797">
+                <i class="fab fa-viber" aria-hidden="true"></i>
+              </a>
+              <a href="tg://msg?text=Mi_mensaje&amp;to=+380670099797">
+                <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+              </a>
+              <a href="https://facebook.com">
+                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+              </a>
+              <a href="https://instagram.com">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h4>Заполните форму обратной связи</h4>
+            <form name="contactForm" class="contact-form" novalidate="novalidate">
+              <div class="form-group">
+                <label for="inputContactName">Имя</label>
+                <input type="text" name="name" class="form-control" id="inputContactName"
+                       placeholder="Введите ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="inputContactNumber">Номер телефона</label>
+                <input type="text" name="phone" class="form-control" id="inputContactNumber"
+                       placeholder="+38 (099) 000-00-00" maxlength="19">
+              </div>
+              <div class="form-group">
+                <label for="inputContactTypeOfCommunication">Удобный вид связи</label>
+                <select name="typeComunication" class="form-control" id="inputContactTypeOfCommunication">
+                  <option value="call">Звонок</option>
+                  <option value="viber">Вайбер</option>
+                  <option value="telegram">Телеграм</option>
+                  <option value="mail">Почта</option>
+                </select>
+              </div>
+              <button class="btn btn-primary">отправить</button>
+              <div>
+                <p class="text-center">Нажимая кнопку "Отправить", вы даете согласие на обработку
+                  <br><a href="#">персональных данных</a></p>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</main>
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p>WOWPRINT</p>
+    </div>
+  </div>
+</footer>
+<script src="https://use.fontawesome.com/7045ec83aa.js"></script>
+</body>
 </html>

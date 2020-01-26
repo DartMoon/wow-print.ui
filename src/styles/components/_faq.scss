@@ -19,4 +19,12 @@
     color: $primaryDark;
     text-decoration: none;
   }
+
+  i {
+    transition: all .25s;
+  }
+}
+
+.card-header button:hover i, .card-header button[aria-expanded=true] i {
+  transform: rotate(180deg);
 }

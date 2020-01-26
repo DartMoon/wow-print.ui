@@ -6,6 +6,7 @@ html, body {
   font-size: $font_size_16;
 }
 
+
 main {
   & > article {
     display: flex;
@@ -67,6 +68,9 @@ h2 {
 @import "components/contacts";
 @import "components/footer";
 @import "components/carousel";
+@import "components/product";
+@import "components/modal";
+@import "components/thank";
 
 @media (max-width: 993px) {
 

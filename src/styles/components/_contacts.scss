@@ -33,6 +33,9 @@ address {
     cursor: pointer;
     transition: all .25s;
     margin-bottom: 20px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 
     &:focus {
       background-color: #fff;
@@ -56,3 +59,31 @@ address {
     }
   }
 }
+
+.social {
+  display: flex;
+  align-items: center;
+
+  & a {
+    transition: all .25s;
+    font-size: 24px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .social {
+    margin-bottom: 40px;
+  }
+}
+
+
+

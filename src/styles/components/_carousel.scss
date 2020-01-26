@@ -3,7 +3,7 @@
 
   .slider-arrow {
     position: absolute;
-    z-index: 50;
+    z-index: $zindex_arrow;
     top: calc(50% - 40px);
     width: 100%;
     display: flex;
@@ -17,16 +17,16 @@
     border: 0;
     background: transparent;
     outline: none;
-    margin: 0 160px;
+    margin: 0 135px;
     i {
-      font-size: 80px;
+      font-size: 50px;
       color: $primary
     }
   }
 }
 
 
-.product-carousel {
+.main-product-carousel {
   max-width: 1200px;
   margin: 0 auto;
  img {
@@ -44,15 +44,27 @@
   }
 }
 
-
-//.carousel-box {
-//  margin-top: 0px;
-//}
-
 .slick-center {
   .carousel-box {
     transition: all .5s;
     opacity: 1;
 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel-wrp {
+    .slider-arrow {
+      justify-content: space-between;
+
+      button {
+        margin: 0;
+      }
+    }
+  }
+
+  .carousel-box {
+    position: static !important;
   }
 }

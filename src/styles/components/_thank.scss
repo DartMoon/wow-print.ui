@@ -1,0 +1,26 @@
+.thanks-container {
+  text-align: center;
+  padding: 0;
+
+  article {
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 48px;
+    color: $primary;
+  }
+
+  .social {
+    max-width: 57px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .thanks-container {
+    & > article {
+      min-height: 100vh;
+    }
+  }
+}

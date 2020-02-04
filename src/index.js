@@ -1,8 +1,6 @@
 import './styles.scss';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 import $ from 'jquery';
 import 'bootstrap';
@@ -154,9 +152,6 @@ $(document).ready(function() {
     imageRectangle(productCarousel);
     imageRectangle(detailCarousel)
   });
-})
-
-
-AOS.init();
+});
 
 

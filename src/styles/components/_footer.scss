@@ -5,9 +5,25 @@ footer {
   background-color: $secondary;
   color: $white;
   padding: 50px 15px;
+  font-size: 14px;
 
   img {
     max-width: 165px;
     width: 100%;
+  }
+  a {
+    transition: .25s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 993px) {
+  footer {
+    ul {
+      margin-bottom: 20px;
+    }
   }
 }

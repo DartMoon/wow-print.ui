@@ -10,6 +10,7 @@
       width: 125px;
       margin-bottom: 20px;
       box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.075);
+      transition: all .25s;
     }
   }
 
@@ -21,29 +22,38 @@
 
     min-height: 60px;
     font-size: 18px;
+    font-weight: 700;
     text-align: center;
   }
 
   &__text {
     font-size: 14px;
+    text-align: center;
+  }
+
+  &-container {
+    &:hover {
+      & .for-what__img_shadow {
+        box-shadow: 0 0.125rem 1.25rem rgba(255, 198, 0, 0.75);
+      }
+    }
   }
 }
 
-
-@media (max-width: 576px) {
-  .for-what-container {
-    &:not(:last-child) {
-      margin-bottom: 50px;
-    }
-  }
-
+@media (max-width: 768px) {
   .for-what {
     &__img {
-      width: 80px;
+      width: 140px;
+    }
+
+    &__title {
+      font-size: 20px;
     }
 
     &__text {
-      text-align: center;
+      font-size: 16px;
+      margin-bottom: 40px;
     }
+
   }
 }

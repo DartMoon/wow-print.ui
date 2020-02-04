@@ -4,13 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Wow print</title>
+  <meta property="og:title" content="Wowprint" />
+  <meta property="og:site_name" content="WowPrint"/>
+  <meta property="og:description" content="Create custom prints" />
+  <meta property="og:image" content="./images/logo_old.svg" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <title>Wowprint</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="./images/logo_old.svg" alt="logo">
+    <a class="navbar-brand" href="/">
+      <img src="images/logo_old.svg" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,43 +26,54 @@
       </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-
       <ul class="d-flex flex-column flex-lg-row nav-list mr-auto">
         <li class="nav-list__item">
-          <a class="nav-list__link" href="#">Главная</a>
+          <a class="nav-list__link" href="/">Главная</a>
         </li>
         <li class="nav-list__item d-none d-lg-block">
           <div class="dropdown">
             <a class="nav-list__link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Продукция
+              <i class="fas fa-chevron-down"></i>
             </a>
-
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Магниты</a>
-              <a class="dropdown-item" href="#">Наклейки</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Что то еще</a>
+              <a class="dropdown-item" href="/product.html">Объёмные наклейки</a>
+              <a class="dropdown-item" href="/product.html">Instagram-визитка</a>
+              <a class="dropdown-item" href="/product.html">Магниты</a>
+              <a class="dropdown-item" href="/product.html">Закатные значки</a>
+              <a class="dropdown-item" href="/product.html">Силиконовые браслеты</a>
+              <a class="dropdown-item" href="/product.html">Часы</a>
             </div>
           </div>
         </li>
-        <li class="d-lg-none nav-list__item">
-          <a class="nav-list__link" href="#">Магниты</a>
-        </li>
-        <li class="d-lg-none nav-list__item">
-          <a class="nav-list__link" href="#">Наклейки</a>
-        </li>
-        <li class="d-lg-none nav-list__item">
-          <a class="nav-list__link" href="#">Что то еще</a>
-        </li>
         <li class="nav-list__item">
-          <a class="nav-list__link" href="#">Контакты</a>
+          <a class="nav-list__link" href="#contacts">Контакты</a>
         </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Объёмные наклейки</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Instagram-визитка</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Магниты</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Закатные значки</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Силиконовые браслеты</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Часы</a>
+        </li>
+
       </ul>
 
       <ul class="d-flex ml-auto language-list">
         <li class="language-list__item">
-          <a class="language-list__link active" href="#">ua</a>
+          <a class="language-list__link active" href="#">ukr</a>
         </li>
         <li class="language-list__item">
           <a class="language-list__link" href="#">rus</a>
@@ -67,9 +83,9 @@
         </li>
       </ul>
     </div>
-
   </div>
 </nav>
+
 <main>
   <article class="gallery">
     <div id="carouselExampleCaptions" class="carousel slide carousel-fade h-100" data-ride="carousel">
@@ -116,23 +132,26 @@
   </article>
   <article class="wow-bg">
     <div class="container-fluid">
+      <div class="container">
+        <h2 class="main-title main-title_primary">Сувенирная продукция</h2>
+      </div>
       <div class="carousel-wrp">
         <div class="slider-arrow">
-          <button class="next"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-          <button class="prev"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          <button id="next" class="next"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button id='prev' class="prev"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
         </div>
         <div id="carousel" class="main-product-carousel">
           <div>
-            <img src="./images/carousel/carousel2.png" alt="">
+            <img src="images/carousel/carousel2.png" alt="">
           </div>
           <div>
-            <img src="./images/carousel/carousel2.png" alt="">
+            <img src="images/carousel/carousel2.png" alt="">
           </div>
           <div>
-            <img src="./images/carousel/carousel2.png" alt="">
+            <img src="images/carousel/carousel2.png" alt="">
           </div>
           <div>
-            <img src="./images/carousel/carousel2.png" alt="">
+            <img src="images/carousel/carousel2.png" alt="">
           </div>
         </div>
         <div class="text-center carousel-box position-absolute w-100">
@@ -149,7 +168,7 @@
 
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
-            <img class="for-what__img" src="./images/icon/icon1.svg" alt="">
+            <img class="for-what__img" src="images/icon/icon1.svg" alt="">
             <h3 class="for-what__title">Сарафанное радио</h3>
             <p class="for-what__text">
               Сарафанное реадио всегда было и будет самим эффективным и бюджетным видом рекламы.
@@ -158,21 +177,21 @@
             </p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
-            <img class="for-what__img" src="./images/icon/icon2.svg" alt="">
+            <img class="for-what__img" src="images/icon/icon2.svg" alt="">
             <h3 class="for-what__title">Имидж компании</h3>
             <p class="for-what__text">Считается, что компания, которая может позволить себе выделять средства на
               сувенирную продукцию, весьма
               успешна и стабильна, будет надежным партнером в долгосрочном периоде.</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
-            <img class="for-what__img" src="./images/icon/icon3.svg" alt="">
+            <img class="for-what__img" src="images/icon/icon3.svg" alt="">
             <h3 class="for-what__title">Wow-эффект</h3>
             <p class="for-what__text">Сарафанное радио всегда было и будет самим эффективным бюджетным видом рекламы.
               Чтобы люди говорили о
               вашей компании много её нужно акивно проявлять в часто просматриваемых местах</p>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 for-what-container">
-            <img class="for-what__img" src="./images/icon/icon4.svg" alt="">
+            <img class="for-what__img" src="images/icon/icon4.svg" alt="">
             <h3 class="for-what__title">Альтернатива
               <br>Digital-рекламе</h3>
             <p class="for-what__text">Информация, содержащаяся на сувенирной продукции оригинальна. Она легко
@@ -191,7 +210,7 @@
 
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4 for-what-container">
-            <img class="for-what__img for-what__img_shadow" src="./images/icon/icon5.svg" alt="">
+            <img class="for-what__img for-what__img_shadow" src="images/icon/icon5.svg" alt="">
             <h3 class="for-what__title">Получаем вашу <br>заявку</h3>
             <p class="for-what__text text-center">
               Когда мы получаем заявку мы связываемся с вами и определеям канал коммуникации: почта, мессенджеры
@@ -199,7 +218,7 @@
             </p>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 for-what-container">
-            <img class="for-what__img for-what__img_shadow" src="./images/icon/icon6.svg" alt="">
+            <img class="for-what__img for-what__img_shadow" src="images/icon/icon6.svg" alt="">
             <h3 class="for-what__title">Подтверждаете
               <br>бланк заказа
             </h3>
@@ -208,7 +227,7 @@
             </p>
           </div>
           <div class="col-sm-12 col-md-12 col-lg-4 for-what-container">
-            <img class="for-what__img for-what__img_shadow" src="./images/icon/icon7.svg" alt="">
+            <img class="for-what__img for-what__img_shadow" src="images/icon/icon7.svg" alt="">
             <h3 class="for-what__title">Получаете заказ
               <br>в своём городе</h3>
             <p class="for-what__text text-center">Мы работаем по всей Украине. После подверждения заказа в течение
@@ -224,7 +243,6 @@
         <h2 class="main-title">Популярные вопросы</h2>
 
         <div class="row">
-
           <div class="accordion" id="faq">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -296,12 +314,47 @@
       </div>
     </div>
   </article>
-  <article class="wow-bg">
+
+  <div class="wow-bg like-us">
+    <div class="container-fluid">
+      <div class="container">
+        <h2 class="main-title">Нам доверяют</h2>
+      </div>
+      <div class="carousel-wrp">
+        <div class="slider-arrow">
+          <button id='next-like' class="next next_min"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button id='prev-like' class="prev prev_min"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        <div id="likeUs" class="main-product-carousel">
+          <div>
+            <img src="images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="images/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="images/carousel/carousel2.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article class="wow-bg" id="contacts">
     <div class="container-fluid">
       <div class="container">
         <h2 class="main-title">Контакты</h2>
-        <div class="row">
-          <div class="col-lg-6">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-6 col-xl-5">
             <address>
               <span>Контактный номер:</span>
               <a href="tel:+380670099797">+38 067 009 97 97</a>
@@ -328,8 +381,8 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h4>Заполните форму обратной связи</h4>
+          <div class="col-md-12 col-lg-6 col-xl-5">
+            <h4 class="contact-title">Заполните форму обратной связи</h4>
             <form name="contactForm" class="contact-form" novalidate="novalidate">
               <div class="form-group">
                 <label for="inputContactName">Имя</label>
@@ -343,20 +396,22 @@
               </div>
               <div class="form-group">
                 <label for="inputContactTypeOfCommunication">Удобный вид связи</label>
-                <select name="typeComunication" class="form-control" id="inputContactTypeOfCommunication">
-                  <option value="call">Звонок</option>
-                  <option value="viber">Вайбер</option>
-                  <option value="telegram">Телеграм</option>
-                  <option value="mail">Почта</option>
-                </select>
+                <div class="select-arrow">
+                  <select name="typeComunication" class="form-control" id="inputContactTypeOfCommunication">
+                    <option value="call">Звонок</option>
+                    <option value="viber">Вайбер</option>
+                    <option value="telegram">Телеграм</option>
+                    <option value="mail">Почта</option>
+                  </select>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
               </div>
-              <button class="btn btn-primary">отправить</button>
-              <div>
-                <p class="text-center">Нажимая кнопку "Отправить", вы даете согласие на обработку
-                  <br><a href="#">персональных данных</a></p>
-              </div>
+              <button class="btn btn-primary btn-primary_bold">отправить заявку</button>
+<!--              <div>-->
+<!--                <p class="text-center">Нажимая кнопку "Отправить", вы даете согласие на обработку-->
+<!--                  <br><a href="#">персональных данных</a></p>-->
+<!--              </div>-->
             </form>
-
           </div>
         </div>
       </div>
@@ -364,8 +419,84 @@
   </article>
 </main>
 <footer>
-  <img src="./images/logo_old.svg" alt="logo">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row justify-content-between">
+        <ul class="col-md-12 col-lg-4 text-center text-lg-left  order-0 order-lg-0">
+          <li><a href="/">Главная</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#payment_delivery">Оплата и доставка</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#privacy_policy">Политика конфелциальности</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#support">Служба поддержки</a></li>
+        </ul>
+        <a href="" class="col-md-12 col-lg-4 text-center text-lg-center  order-2 order-lg-1">
+          <img src="images/logo_old.svg" alt="logo">
+        </a>
+        <ul class="col-md-12 col-lg-4 text-center text-lg-right  order-1 order-lg-2">
+          <li>PK Wowprint</li>
+          <li>Украина, г.Днепр, ул. Героев Крут, 16</li>
+          <li>тел: <a href="tel:+380673629090">+38 (067) 362 90 90</a></li>
+          <li><a href="mailto:office@wowprint.com.ua">office@wowprint.com.ua</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </footer>
+<div class="modal fade modal-user-info" id="payment_delivery" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h4>Оплата и доставка</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque expedita, illum perspiciatis
+          quia rem voluptas voluptatibus. Ab aliquid architecto asperiores aspernatur consectetur consequuntur cum
+          dignissimos doloribus eaque est explicabo in incidunt iste minima molestias perspiciatis placeat, quis
+          temporibus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-user-info" id="privacy_policy" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h4>Политика конфелциальности</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque expedita, illum perspiciatis
+          quia rem voluptas voluptatibus. Ab aliquid architecto asperiores aspernatur consectetur consequuntur cum
+          dignissimos doloribus eaque est explicabo in incidunt iste minima molestias perspiciatis placeat, quis
+          temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque expedita, illum
+          perspiciatis
+          quia rem voluptas voluptatibus. Ab aliquid architecto asperiores aspernatur consectetur consequuntur cum
+          dignissimos doloribus eaque est explicabo in incidunt iste minima molestias perspiciatis placeat, quis
+          temporibus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-user-info" id="support" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h4>Служба поддержки</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorem maiores omnis pariatur
+          provident velit! Architecto at corporis dolore, iste itaque natus quis repudiandae ut? Ad aliquam aperiam
+          consequatur, corporis dolor dolores eos eum eveniet exercitationem fuga id labore magnam minima mollitia
+          nesciunt officia perferendis porro quibusdam rem repellendus sequi soluta voluptatem? Accusantium autem,
+          doloribus ea harum nam repellat unde.</p>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="https://kit.fontawesome.com/d781803e9e.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -49,6 +49,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^4.4.1",
     "core-js": "^3.3.4",
     "handlebars": "^4.5.3",

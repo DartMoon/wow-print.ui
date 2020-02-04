@@ -1,30 +1,64 @@
 .accordion {
   width: 100%;
-}
 
-.card {
-  background-color: transparent;
-}
-
-.card-header button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  color: #f5dd46;
-  text-align: left;
-
-  &:focus,
-  &:hover {
-    color: $primaryDark;
-    text-decoration: none;
+  .card {
+    background-color: transparent;
   }
 
-  i {
-    transition: all .25s;
+  .card-header button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #f5dd46;
+    text-align: left;
+
+    &:focus,
+    &:hover {
+      color: $primaryDark;
+      text-decoration: none;
+    }
+
+    i {
+      transition: all .25s;
+    }
+  }
+
+  .card-header button:hover i, .card-header button[aria-expanded=true] i {
+    transform: rotate(180deg);
   }
 }
 
-.card-header button:hover i, .card-header button[aria-expanded=true] i {
-  transform: rotate(180deg);
+.accordion_invert {
+
+  .card {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .card-header {
+    background-color: transparent;
+    border: 0;
+  }
+
+  .card-header button {
+    justify-content: flex-start;
+    color: $secondary;
+    padding: 0;
+
+    i {
+      margin-left: 5px;
+    }
+
+    &:focus,
+    &:hover {
+      color: $primaryDark;
+    }
+  }
+
+  .card-body {
+    padding-top: 0;
+  }
 }
+
+

@@ -8,8 +8,27 @@
     width: 100%;
     display: flex;
     justify-content: center;
-  }
 
+    &_viewed {
+      right: -130px;
+      justify-content: flex-end;
+
+    }
+  }
+}
+
+.slider-arrow_viewed {
+  border: 3px solid $primary;
+  border-radius: 50%;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
 }
 
 .slider-arrow {
@@ -17,10 +36,40 @@
     border: 0;
     background: transparent;
     outline: none;
-    margin: 0 135px;
+    &#next,
+    &#prev {
+      margin: 0 135px;
+    }
+    &.next_min,
+    &.prev_min {
+
+      i {
+        font-size: 30px;
+        color: $black;
+      }
+    }
+
+    &#next-like,
+    &#prev-like {
+      margin: 10px 105px
+    }
     i {
       font-size: 50px;
       color: $primary
+    }
+
+
+  }
+}
+
+#likeUs {
+  div {
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: auto;
     }
   }
 }
@@ -34,12 +83,14 @@
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
    transition: all .5s;
+   opacity: .4;
  }
 
   .slick-center {
     & img {
       filter: grayscale(0);
       -webkit-filter: grayscale(0);
+      opacity: 1;
     }
   }
 }
@@ -52,19 +103,85 @@
   }
 }
 
+.viewed-carousel {
+  margin-bottom: 40px;
+
+  &__box {
+    width: calc(100% - 10px) !important;
+    padding: 15px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border-radius: 8px;
+    h3 {
+      font-size: 18px;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 993px) {
+  .carousel-wrp {
+    .slider-arrow {
+      &_viewed {
+        right: -70px;
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .carousel-wrp {
     .slider-arrow {
       justify-content: space-between;
 
+
+      &_viewed {
+        right: -70px;
+        justify-content: flex-end;
+      }
+
       button {
-        margin: 0;
+        margin: 0 !important;
+
+        &#next-like,
+        &#prev-like {
+          margin: 10px 0 !important;
+        }
       }
     }
   }
 
+  .slider-arrow_viewed {
+    button {
+      width: 40px;
+      height: 40px;
+      i {
+        font-size: 37px;
+      }
+    }
+  }
+
+
   .carousel-box {
     position: static !important;
   }
+}
+
+@media (max-width: 568px) {
+  .carousel-wrp {
+    .slider-arrow {
+      &_viewed {
+        right: -50px;
+      }
+
+    }
+  }
+
 }

@@ -4,12 +4,17 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <title>Wow print</title>
+  <meta property="og:title" content="Wowprint"/>
+  <meta property="og:site_name" content="WowPrint"/>
+  <meta property="og:description" content="Create custom prints"/>
+  <meta property="og:image" content="./images/logo_old.svg"/>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+  <title>Wowprint</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="images/logo_old.svg" alt="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -21,44 +26,54 @@
       </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-
       <ul class="d-flex flex-column flex-lg-row nav-list mr-auto">
         <li class="nav-list__item">
-          <a class="nav-list__link" href="#">Главная</a>
+          <a class="nav-list__link" href="/">Главная</a>
         </li>
         <li class="nav-list__item d-none d-lg-block">
           <div class="dropdown">
             <a class="nav-list__link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Продукция
+              <i class="fas fa-chevron-down"></i>
             </a>
-
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Магниты</a>
-              <a class="dropdown-item" href="#">Наклейки</a>
-              <a class="dropdown-item" href="#">Магниты</a>
-              <a class="dropdown-item" href="#">Наклейки</a>
-              <a class="dropdown-item" href="#">Что то еще</a>
+              <a class="dropdown-item" href="/product.html">Объёмные наклейки</a>
+              <a class="dropdown-item" href="/product.html">Instagram-визитка</a>
+              <a class="dropdown-item" href="/product.html">Магниты</a>
+              <a class="dropdown-item" href="/product.html">Закатные значки</a>
+              <a class="dropdown-item" href="/product.html">Силиконовые браслеты</a>
+              <a class="dropdown-item" href="/product.html">Часы</a>
             </div>
           </div>
         </li>
-        <li class="d-lg-none nav-list__item">
-          <a class="nav-list__link" href="#">Магниты</a>
-        </li>
-        <li class="d-lg-none nav-list__item">
-          <a class="nav-list__link" href="#">Наклейки</a>
-        </li>
-        <li class="d-lg-none nav-list__item">
-          <a class="nav-list__link" href="#">Что то еще</a>
-        </li>
         <li class="nav-list__item">
-          <a class="nav-list__link" href="#">Контакты</a>
+          <a class="nav-list__link" href="#contacts">Контакты</a>
         </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Объёмные наклейки</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Instagram-визитка</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Магниты</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Закатные значки</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Силиконовые браслеты</a>
+        </li>
+        <li class="d-lg-none nav-list__item">
+          <a class="nav-list__link" href="/product.html">Часы</a>
+        </li>
+
       </ul>
 
       <ul class="d-flex ml-auto language-list">
         <li class="language-list__item">
-          <a class="language-list__link active" href="#">ua</a>
+          <a class="language-list__link active" href="#">ukr</a>
         </li>
         <li class="language-list__item">
           <a class="language-list__link" href="#">rus</a>
@@ -71,11 +86,35 @@
   </div>
 </nav>
 <main>
-  <article class="product-container">
+  <div class="product-container">
+    <div class="container-fluid nav-tabs-mobile d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="nav nav-tabs-mobile__list" role="tablist">
+            <a class="scrollTabsTop active" data-toggle="tab" href="#nav-home" role="tab"
+               aria-controls="nav-home" aria-selected="true">Всё о товаре</a>
+            <a class="scrollTabs" data-toggle="tab" href="#nav-profile" role="tab"
+               aria-controls="nav-profile" aria-selected="false">Характеристики</a>
+            <a class="scrollTabs" data-toggle="tab" href="#nav-question" role="tab"
+               aria-controls="nav-profile" aria-selected="false">FAQ</a>
+            <a class="scrollTabs" data-toggle="tab" href="#nav-contact" role="tab"
+               aria-controls="nav-contact" aria-selected="false">Фото</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-md-12 col-lg-6 product-gallery">
+        <div class="row product-info">
+          <h3>Объёмные наклейки с лого (шильды) <span>&nbsp;Код: 781267</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-6 col-xl-5 product-gallery mr-xl-4">
             <div id="productCarousel" class="carousel slide product-carousel carousel-fade" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -103,67 +142,316 @@
               </a>
             </div>
           </div>
-          <div class="col-md-12 col-lg-6 product-form">
-              <h4>Введите данные для расчета стоимости</h4>
-              <form name="priceForm" class="row" novalidate="novalidate">
-                <div class="col-xs-12 col-md-6">
-                  <div class="form-group">
-                    <label for="figure">Форма</label>
+          <div class="col-md-12 col-lg-6 col-xl-5 product-form">
+            <h4>Введите данные для расчета стоимости</h4>
+            <form name="priceForm" class="row" novalidate="novalidate">
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="figure">Выберите форму наклейки</label>
+                  <div class="select-arrow">
                     <select class="form-control" id="figure" name="selectFigure">
-                      <option value="default">Выберете фигуру</option>
                       <option value="circle">Круглые</option>
                       <option value="square">Квадратные</option>
                       <option value="rectangular">Прямоугольные</option>
                     </select>
+                    <i class="fas fa-chevron-down"></i>
                   </div>
-                  <div class="form-group">
-                    <label for="size">Размер</label>
+                </div>
+                <div class="form-group">
+                  <label for="size">Выберите размер</label>
+                  <div class="select-arrow">
                     <select class="form-control" id="size" name="selectSize">
-                      <option value="default">Выберете диаметр</option>
-                      <option value="30">30</option>
-                      <option value="40">40</option>
-                      <option value="50">50</option>
+                      <option value="30">диаметр 30мм</option>
+                      <option value="40">диаметр 40мм</option>
+                      <option value="50">дмаметр 50мм</option>
                     </select>
+                    <i class="fas fa-chevron-down"></i>
                   </div>
-                  <div class="form-group">
-                    <label for="amount">Колличество</label>
+                </div>
+                <div class="form-group">
+                  <label for="amount">Выберите колличество</label>
+                  <div class="select-arrow">
                     <select class="form-control" id="amount" name="selectAmount">
-                      <option value="default">Выберете колличество</option>
-                      <option value="100">100</option>
-                      <option value="500">500</option>
-                      <option value="1000">1000</option>
+                      <option value="100">100 штук</option>
+                      <option value="500">500 штук</option>
+                      <option value="1000">1000 штук</option>
                     </select>
+                    <i class="fas fa-chevron-down"></i>
                   </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                  <div class="price-wrp">
-                    <div class="">
-                      <p class="price-wrp__title" >
-                        Цена
-                      </p>
-                      <p class="price-wrp__val" id="total-price">0</p>
-                    </div>
-                    <div class="">
-                      <p class="price-wrp__title">Срок изготовления</p>
-                      <p class="price-wrp__val">0 <span>дней</span></p>
-                    </div>
-                    <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">отправить</button>
+              </div>
+              <div class="col-12">
+                <div class="price-wrp">
+                  <div class="">
+                    <p class="price-wrp__title">
+                      Цена:&nbsp;
+                    </p>
+                    <p class="price-wrp__val" id="total-price">0</p>
+                  </div>
+                  <div class="">
+                    <p class="price-wrp__title">Срок изготовления:&nbsp;</p>
+                    <p class="price-wrp__val">0 <span>дней</span></p>
                   </div>
                 </div>
-              </form>
+                <button type="button" class="btn btn-primary btn-primary_bold" data-toggle="modal"
+                        data-target="#exampleModalLong">
+                  отправить заявку
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="w-100 col">
+            <div class="d-none d-lg-block">
+              <div class="nav nav-tabs" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                   aria-controls="nav-home" aria-selected="true">Всё о товаре</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                   aria-controls="nav-profile" aria-selected="false">Характеристики</a>
+                <a class="nav-item nav-link" id="nav-question-tab" data-toggle="tab" href="#nav-question" role="tab"
+                   aria-controls="nav-question-tab" aria-selected="false">FAQ</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+                   aria-controls="nav-contact" aria-selected="false">Фото</a>
+              </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque dolores temporibus. Architecto
+                commodi, dicta
+                dolorem dolorum eaque enim facere nam nesciunt nihil non officiis placeat provident quae quasi
+                repudiandae
+                tempora vel voluptates? At harum illo obcaecati quaerat ratione ullam voluptatibus! Accusantium adipisci
+                amet
+                assumenda at beatae blanditiis dolore eaque earum illo illum incidunt ipsam laborum molestiae nisi
+                nostrum omnis
+                perspiciatis quaerat ratione, repellendus repudiandae sint sit suscipit temporibus tenetur totam unde
+                voluptatibus. Aliquam eaque est iure neque, optio pariatur saepe temporibus? Accusamus alias aperiam
+                architecto
+                consectetur cumque eos exercitationem explicabo, harum, labore molestias nihil pariatur quam repellat
+                sunt
+                tempore.
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <ul class="description-list">
+                  <li class="description-list__item">
+                    <p>Exercitationem explicabo</p>
+                    <p>!aque</p>
+                  </li>
+                  <li class="description-list__item">
+                    <p>Exercitationem explicabo</p>
+                    <p>!aque</p>
+                  </li>
+                  <li class="description-list__item">
+                    <p>Exercitationem explicabo</p>
+                    <p>!aque</p>
+                  </li>
+                  <li class="description-list__item">
+                    <p>Exercitationem explicabo</p>
+                    <p>!aque</p>
+                  </li>
+                  <li class="description-list__item">
+                    <p>Exercitationem explicabo</p>
+                    <p>!aque</p>
+                  </li>
+                  <li class="description-list__item">
+                    <p>Exercitationem explicabo</p>
+                    <p>!aque</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane fade" id="nav-question" role="tabpanel" aria-labelledby="nav-question-tab">
+                <div class="accordion accordion_invert" id="faq">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                          Collapsible Group Item #1
+                          <i class="fas fa-angle-up" aria-hidden="true"></i>
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faq">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf
+                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod.
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda
+                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea
+                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                        denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                          Collapsible Group Item #2
+                          <i class="fas fa-angle-up" aria-hidden="true"></i>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faq">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf
+                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod.
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda
+                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea
+                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                        denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Collapsible Group Item #3
+                          <i class="fas fa-angle-up" aria-hidden="true"></i>
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faq">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf
+                        moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                        eiusmod.
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                        assumenda
+                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                        sapiente ea
+                        proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                        denim
+                        aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="details-gallery">
+                  <img src="images/intro.png" class="d-block w-100 col-sm-12 col-md-6 col-lg-4" alt="...">
+                  <img src="images/intro.png" class="d-block w-100 col-sm-12 col-md-6 col-lg-4" alt="...">
+                  <img src="images/intro.png" class="d-block w-100 col-sm-12 col-md-6 col-lg-4" alt="...">
+                  <img src="images/intro.png" class="d-block w-100 col-sm-12 col-md-6 col-lg-4" alt="...">
+                  <img src="images/intro.png" class="d-block w-100 col-sm-12 col-md-6 col-lg-4" alt="...">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </article>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="separator"></div>
+            <h3 class="font-weight-bold">Рекомендуем обратить внимание</h3>
+            <p>Посетители сайта часто просматривали эти позиции</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <div class="carousel-wrp">
+              <div id="viewed-carousel" class="viewed-carousel">
+                <a href="/product" class="viewed-carousel__box">
+                  <img src="images/carousel/carousel2.png" alt="">
+                  <h3>Text</h3>
+                  <span class="btn btn-link btn-primary">Подробнее</span>
+                </a>
+                <a href="/product" class="viewed-carousel__box">
+                  <img src="images/carousel/carousel2.png" alt="">
+                  <h3>Text</h3>
+                  <span class="btn btn-link btn-primary">Подробнее</span>
+                </a>
+                <a href="/product" class="viewed-carousel__box">
+                  <img src="images/carousel/carousel2.png" alt="">
+                  <h3>Text</h3>
+                  <span class="btn btn-link btn-primary">Подробнее</span>
+                </a>
+                <a href="/product" class="viewed-carousel__box">
+                  <img src="images/carousel/carousel2.png" alt="">
+                  <h3>Text</h3>
+                  <span class="btn btn-link btn-primary">Подробнее</span>
+                </a>
+                <a href="/product" class="viewed-carousel__box">
+                  <img src="images/carousel/carousel2.png" alt="">
+                  <h3>Text</h3>
+                  <span class="btn btn-link btn-primary">Подробнее</span>
+                </a>
+                <a href="/product" class="viewed-carousel__box">
+                  <img src="images/carousel/carousel2.png" alt="">
+                  <h3>Text</h3>
+                  <span class="btn btn-link btn-primary">Подробнее</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-center align-items-center pl-0">
+            <div class="slider-arrow slider-arrow_viewed">
+              <button id='viewed_next' class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row justify-content-between">
+        <ul class="col-md-12 col-lg-4 text-center text-lg-left  order-0 order-lg-0">
+          <li><a href="/">Главная</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#payment_delivery">Оплата и доставка</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#privacy_policy">Политика конфелциальности</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#support">Служба поддержки</a></li>
+        </ul>
+        <a href="" class="col-md-12 col-lg-4 text-center text-lg-center  order-2 order-lg-1">
+          <img src="images/logo_old.svg" alt="logo">
+        </a>
+        <ul class="col-md-12 col-lg-4 text-center text-lg-right  order-1 order-lg-2">
+          <li>PK Wowprint</li>
+          <li>Украина, г.Днепр, ул. Героев Крут, 16</li>
+          <li>тел: <a href="tel:+380673629090">+38 (067) 362 90 90</a></li>
+          <li><a href="mailto:office@wowprint.com.ua">office@wowprint.com.ua</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 <!-- Modal -->
-<div class="modal fade modal-user-info" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+<div class="modal fade modal-user-info" id="exampleModalLong" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
-      </button>-->
+      </button>
       <div class="modal-body">
         <h4>Укажите котактные данные</h4>
 
@@ -180,23 +468,85 @@
           </div>
           <div class="form-group">
             <label for="inputContactTypeOfCommunication">Удобный вид связи</label>
-            <select name="typeComunication" class="form-control" id="inputContactTypeOfCommunication">
-              <option value="call">Звонок</option>
-              <option value="viber">Вайбер</option>
-              <option value="telegram">Телеграм</option>
-              <option value="mail">Почта</option>
-            </select>
+            <div class="select-arrow">
+              <select name="typeComunication" class="form-control" id="inputContactTypeOfCommunication">
+                <option value="call">Звонок</option>
+                <option value="viber">Вайбер</option>
+                <option value="telegram">Телеграм</option>
+                <option value="mail">Почта</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
           </div>
-          <button class="btn btn-primary">отправить</button>
-          <div>
-            <p class="text-center">Нажимая кнопку "Отправить", вы даете согласие на обработку
-              <br><a href="#">персональных данных</a></p>
-          </div>
+          <button class="btn btn-primary btn-primary_bold">отправить заявку</button>
+          <!--          <div>-->
+          <!--            <p class="text-center">Нажимая кнопку "Отправить", вы даете согласие на обработку-->
+          <!--              <br><a href="#">персональных данных</a></p>-->
+          <!--          </div>-->
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade modal-user-info" id="payment_delivery" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h4>Оплата и доставка</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque expedita, illum perspiciatis
+          quia rem voluptas voluptatibus. Ab aliquid architecto asperiores aspernatur consectetur consequuntur cum
+          dignissimos doloribus eaque est explicabo in incidunt iste minima molestias perspiciatis placeat, quis
+          temporibus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-user-info" id="privacy_policy" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h4>Политика конфелциальности</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque expedita, illum perspiciatis
+          quia rem voluptas voluptatibus. Ab aliquid architecto asperiores aspernatur consectetur consequuntur cum
+          dignissimos doloribus eaque est explicabo in incidunt iste minima molestias perspiciatis placeat, quis
+          temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem doloremque expedita, illum
+          perspiciatis
+          quia rem voluptas voluptatibus. Ab aliquid architecto asperiores aspernatur consectetur consequuntur cum
+          dignissimos doloribus eaque est explicabo in incidunt iste minima molestias perspiciatis placeat, quis
+          temporibus.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade modal-user-info" id="support" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h4>Служба поддержки</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolorem maiores omnis pariatur
+          provident velit! Architecto at corporis dolore, iste itaque natus quis repudiandae ut? Ad aliquam aperiam
+          consequatur, corporis dolor dolores eos eum eveniet exercitationem fuga id labore magnam minima mollitia
+          nesciunt officia perferendis porro quibusdam rem repellendus sequi soluta voluptatem? Accusantium autem,
+          doloribus ea harum nam repellat unde.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <script src="https://kit.fontawesome.com/d781803e9e.js" crossorigin="anonymous"></script>
 </body>
 </html>

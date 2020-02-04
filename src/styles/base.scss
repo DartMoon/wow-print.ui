@@ -2,7 +2,8 @@
 @import '../styles/themeColors.scss';
 
 html, body {
-  font-family: Calibri, sans-serif !important;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
   font-size: $font_size_16;
 }
 
@@ -23,10 +24,14 @@ main {
   }
 }
 
+.like-us {
+  padding: 100px 0;
+}
+
 h2 {
   .wow-title {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 100px;
 
     &_primary {
@@ -36,8 +41,13 @@ h2 {
 }
 
 .main-title {
+  font-weight: 700;
   text-align: center;
   margin-bottom: 80px;
+
+  &_primary {
+    color: $primary !important;
+  }
 }
 
 .wow-bg {
@@ -58,6 +68,46 @@ h2 {
   }
 }
 
+.separator {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: $primary;
+  margin-bottom: 60px;
+
+  &::before {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 35px 0 35px;
+    border-color: $primary transparent transparent transparent;
+  }
+  &::after {
+    position: absolute;
+    left: calc(15% + 4px);
+    top: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 31px 31px 0 31px;
+    border-color: $white transparent transparent transparent;
+  }
+}
+
+.select-arrow {
+  position: relative;
+  & i {
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    z-index: 10;
+  }
+}
 
 @import "button";
 @import "components/header";
@@ -71,9 +121,12 @@ h2 {
 @import "components/product";
 @import "components/modal";
 @import "components/thank";
+@import "components/tabs";
 
 @media (max-width: 993px) {
-
+  .like-us {
+    padding-bottom: 0;
+  }
 }
 
 

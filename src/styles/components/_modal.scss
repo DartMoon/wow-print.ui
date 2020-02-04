@@ -1,3 +1,12 @@
+.modal {
+  .close {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 15px;
+  }
+}
+
 .modal-user-info {
   .modal-dialog {
     max-width: 440px;
@@ -5,5 +14,12 @@
 
   .modal-body {
     padding: 40px 40px 25px;
+
+    h4 {
+      font-weight: bold;
+      text-align: center;
+      color: $primary;
+      margin-bottom: 20px;
+    }
   }
 }
